@@ -1,4 +1,18 @@
 {
   "plugins": ["transform-runtime"],
-  "presets": ["env"]
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "6.10"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "production": {
+      "presets": ["minify"]
+    }
+  }
 }
